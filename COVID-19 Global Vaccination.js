@@ -23,20 +23,17 @@ let padding = 14
 let barWidth = smallWidgetWidth - 2 * padding
 let barHeight = 3
 
-let formatter = new DateFormatter()
-formatter.locale = "en"
-formatter.dateFormat = "MMM d"
 
 let country = {
-    germany: "DE",
-    canada: "CA",
-    usa: "US"
+    germany: "DEU",
+    canada: "CAN",
+    usa: "USA"
 }
 
-let iso3Conversion = {
-    "DE": "DEU",
-    "CA": "CAN",
-    "US": "USA"
+let flag = {
+    "DEU": "🇩🇪",
+    "CAN": "🇨🇦",
+    "USA": "🇺🇸"
 }
 
 ////////////////////////////////////////////////
@@ -55,11 +52,9 @@ if (!debug) {
 ////////////////////////////////////////////////
 let today = new Date()
 
-let flag = {
-    "DE": "🇩🇪",
-    "CA": "🇨🇦",
-    "US": "🇺🇸"
-}
+let formatter = new DateFormatter()
+formatter.locale = "en"
+formatter.dateFormat = "MMM d"
 
 // Vaccination Data ////////////////////////////
 let vaccinationResponseMemoryCache
