@@ -167,9 +167,9 @@ function displayContent(canvas) {
 
 // Local Data //////////////////////////////////
 function displayLocalData(canvas) {
-    displayPrimaryRegion(canvas, location.kissing)
+    displayPrimaryRegion(canvas, location.munich)
     canvas.addSpacer(2)
-    displaySecondaryRegionContainer(canvas, location.augsburg, location.munich, location.freilassing)
+    displaySecondaryRegionContainer(canvas, location.augsburg, location.kissing, location.freilassing)
 }
 
 // Primary Region //////////////////////////////
